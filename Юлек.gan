@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Магазин электроники" company="АПЭК" webLink="http://" view-date="2016-10-20" view-index="0" gantt-divider-location="457" resource-divider-location="300" version="2.8.1" locale="ru_RU">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Название" width="331" order="0"/>
+        <field id="tpd4" name="Дата начала" width="61" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="61" order="2"/>
+        <timeline><![CDATA[4,36,29,0,39,14,24,28,2,22,32,6,34]]></timeline>
+        <option id="color.recent"><![CDATA[#ffcccc #ffccff #33ffcc #ff3300 #ff3333]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="210" order="0"/>
+        <field id="1" name="Стандартная роль" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Инициация проекта" color="#8cb6ce" meeting="false" start="2016-11-01" duration="4" complete="100" priority="2" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Составление ТЗ" color="#8cb6ce" meeting="false" start="2016-11-05" duration="2" complete="100" expand="true"/>
+        <task id="4" name="Повышение квалификации персонала" color="#8cb6ce" meeting="false" start="2016-11-08" duration="5" complete="0" expand="true"/>
+        <task id="6" name="Составление плана работ" color="#8cb6ce" meeting="false" start="2016-11-05" duration="1" complete="100" expand="true"/>
+        <task id="14" name="Командная работа" color="#8cb6ce" meeting="false" start="2016-11-01" duration="6" complete="0" expand="true"/>
+        <task id="20" name="Знакомство с методикой CRC" color="#8cb6ce" meeting="false" start="2016-11-04" duration="14" complete="0" expand="true"/>
+        <task id="22" name="Освоение системы управления версиями Git" color="#8cb6ce" meeting="false" start="2016-11-01" duration="6" complete="0" expand="true"/>
+        <task id="24" name="Методика планирования управления рисками" color="#8cb6ce" meeting="false" start="2016-11-01" duration="23" complete="0" expand="true"/>
+        <task id="29" name="Проектирование БД" color="#ffcccc" meeting="false" start="2016-10-31" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Составление логической и физической модели БД. Выделение сущностей.]]></notes>
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+            <task id="53" name="Проектирование логической модели" meeting="false" start="2016-10-31" duration="1" complete="0" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="58" name="Проектирование физической модели" color="#8cb6ce" meeting="false" start="2016-11-01" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="32" name="Оптимизация производительности БД" color="#ffcccc" meeting="false" start="2016-11-02" duration="6" complete="0" expand="true">
+            <notes><![CDATA[Повышение производительности БД]]></notes>
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="34" name="Обеспечение безопасности БД" color="#ffcccc" meeting="false" start="2016-11-09" duration="3" complete="0" expand="true">
+            <notes><![CDATA[1. Для целостности БД должны быть предусмотрены механизмы управления данными, обеспечивающие поддержание целостности БД при одновременном выполнении нескольких операций.
+2. Для обеспечения достоверности должны быть предусмотрены механизмы обеспечения устойчивости элементов данных и их логических взаимосвязей к ошибкам или неквалифицированным действиям пользователей.]]></notes>
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="36" name="Резервное копирование и Восстановление базы данных" color="#ffcccc" meeting="false" start="2016-11-12" duration="5" complete="0" expand="true">
+            <notes><![CDATA[1. Восстановление должны быть предусмотрены механизмы восстановления за предельно короткое время того состояния БД, которое было перед появлением неисправности.
+2. Резервное копирование должны быть созданы копии данных на носителе(жёстком диске  и т. д.) предназначенном для восстановления данных в оригинальном или новом месте их расположения в случае их повреждения или разрушения.]]></notes>
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="39" name="Обеспечение целостности баз данных" color="#ffcccc" meeting="false" start="2016-11-18" duration="4" complete="0" expand="true">
+            <notes><![CDATA[Проверка БД на содержание полной и непротиворечивой информации. Наложение ограничения целостности.]]></notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Вовка" function="Default:0" contacts="" phone="03"/>
+        <resource id="1" name="Юлек" function="Default:0" contacts="" phone="02"/>
+        <resource id="2" name="Анастейша" function="Default:0" contacts="" phone="01"/>
+        <resource id="4" name="Зенит" function="Default:0" contacts="" phone="04"/>
+        <resource id="3" name="Санчес" function="Default:0" contacts="" phone="007"/>
+        <resource id="5" name="Лентос" function="Default:0" contacts="" phone="112"/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
